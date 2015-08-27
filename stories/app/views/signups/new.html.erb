@@ -1,0 +1,23 @@
+<div class ="contact">
+	<div class = "front row">
+		<div class = "container">
+				<h1>Get the latest updates from Stories</h1>
+				<span class = "signup_form">
+				<%= form_for(:signup) do |f| %>
+
+		      <%= f.label "First Name" %>
+		      <%= f.text_field :firstname, class: 'form-control' %>
+
+		      <%= f.label "Email" %>
+		      <%= f.email_field :email, class: 'form-control' %>
+
+		      <%= f.submit "Join", class: "btn" %>
+
+	    	<% end %>	 		
+	    	</span>
+		</div>
+	</div>
+</div>
+
+
+

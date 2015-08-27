@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= favicon_link_tag 'favicon.ico' %>
+  <title>David Mandel | Web Developer</title>
+  <!-- Roboto Web Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <!-- Roboto Slab Web Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <!-- Twitter Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">David Mandel</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Portfolio", portfolio_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav> <!-- End Navbar -->
+
+<%= yield %>
+	<!-- Sticky Footer -->
+	<footer class="footer">
+	  <div class="container">
+
+	    <div class="col-sm-4">
+	    	<p class="text-muted">&copy; 2015 David Mandel</p>
+	    </div>
+	    <div class="col-sm-4 social-links">
+          <ul>
+            <li>
+              <a href="mailto:david@davidmandel.net"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="http://www.github.com/mandeldl"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/dmandel"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="http://www.codepen.io/mandeldl/"><i class="fa fa-codepen"></i></a>
+            </li>
+          </ul>
+	    </div>
+	    <div class="col-sm-4">
+	    	<p><a href="https://www.youtube.com/watch?v=-eohHwsplvY" title="NY I Love You, But You're Bringing Me Down" target="_blank">Made with ♥ in NYC</a></p>
+	    </div>
+	  </div>
+	</footer>
+  <%= javascript_include_tag "application" %>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div id="sidr">
+	  <!-- Your content -->
+	  <ul>
+	    <%= image_tag("http://s3.amazonaws.com/codecademy-content/projects/z2d/stories/close-white.svg", :id =>"icon_close", :class => "float_right") %>	  	
+	    <li>
+	    	<%= link_to "Home", root_path %>
+	    </li>
+
+	    <li><%= link_to "About", about_path %></li>
+	    <li><%= link_to "Contact", contact_path %></li>
+	  </ul>
+</div>
+	
+<div class = "menu row">
+	<div class = "container">
+		<a href="#sidr"><%= image_tag("http://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-white.svg", :id =>"icon_open") %></a>
+	</div>
+</div>
+
+ 	<script>
+		$(document).ready(function() {
+		  $('#icon_open').sidr();
+		  $('#icon_close').sidr();
+		});
+	</script>

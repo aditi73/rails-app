@@ -1,0 +1,53 @@
+<div class="container">
+	<h1>Portfolio</h1>
+</div>
+    
+<div class="banner">
+  <div class="container">
+    <div class="slider">
+      <%= image_tag("../assets/website-screenshots/outbox.png") %>
+      <%= image_tag("../assets/website-screenshots/boltnetwork.png") %>
+      <%= image_tag("../assets/website-screenshots/calendar.png") %>
+    </div>
+  </div>
+</div>
+
+<div class="supporting">
+  <div class="container">
+
+    <div class="row">
+      <% @works.each do |work| %>
+      <div class="col-md-4">
+        <a class="thumbnail" href="#">
+          <h3><%= work.name %></h3>
+          <p><%= image_tag("../assets/website-screenshots/#{work.imgurl}.png", class: "img-responsive") %></p>
+          <p><%= work.description %></p>
+        </a>
+      </div>    
+      <% end %>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <a class="consumer thumbnail">
+          <%= image_tag("../assets/website-screenshots/bonsai.png") %>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, eum?</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a class="consumer thumbnail">
+          <%= image_tag("../assets/website-screenshots/bonsai.png") %>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, eum?</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a class="consumer thumbnail">
+          <%= image_tag("../assets/website-screenshots/bonsai.png") %>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, eum?</p>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>

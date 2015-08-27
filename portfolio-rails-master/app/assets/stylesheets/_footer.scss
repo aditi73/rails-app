@@ -1,0 +1,16 @@
+$footer-spacing: 18px;
+
+footer {
+	padding-top: 15px;
+	text-align: center;
+	li {
+		display: inline-block;
+		list-style: none;
+		list-style-position: inside;
+	}
+
+	.fa {
+		font-size: $footer-spacing;
+		margin: 0 $footer-spacing;
+	}
+}

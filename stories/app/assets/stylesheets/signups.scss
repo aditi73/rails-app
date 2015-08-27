@@ -1,0 +1,32 @@
+// Place all the styles related to the Signups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h1{
+	font-weight:300;
+	
+}
+.contact{
+	background-image:image-url("https://unsplash.imgix.net/photo-1414924347000-9823c338079b?q=75&fm=jpg&s=0fa6db3cdc65e50c111575043fad4b5c");
+	background-size:100%;
+	background-position:0% 35%;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+
+.signup_form{
+	text-align: left;
+}
+
+label{
+	margin-top: 2em;
+}
+form{
+	margin-top:4em;
+
+}

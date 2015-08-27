@@ -1,0 +1,49 @@
+.about-heading {
+	text-align: center;
+}
+
+.image-grid img {
+	display: inline-block;
+	width: 50%;
+	max-width: 320px;
+}
+
+.about-text {
+	padding-top: 20px;
+
+	p {
+		color: black;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+}
+
+@media (min-width: 640px) {
+
+	.about-text {
+		font-size: 1.5vw;
+	}
+	.image-grid {
+		width: 25%;
+		img {
+			display: block;
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	.grid_1, .about-text {
+		display: inline-block;
+		float: left;
+	}
+
+	.grid_2 {
+		float: right;
+	}
+
+	.about-text {
+		width: 50%;
+		margin: 0;
+	}
+}

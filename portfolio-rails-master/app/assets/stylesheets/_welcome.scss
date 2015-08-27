@@ -1,0 +1,26 @@
+.site-wrapper {
+  height: 600px;
+  padding-top: 300px;
+  font-family: 'Roboto Slab', serif;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), image-url("david.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), image-url("david.jpg");
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), image-url("david.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), image-url("david.jpg") no-repeat;
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), image-url("david.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), image-url("david.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.inner {
+  color: white;
+}
+
+.skills {
+  background-color: rgba(100%,100%,100%,0.3);
+  display: inline-block;
+  width: 200px;
+}

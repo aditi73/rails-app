@@ -1,0 +1,13 @@
+<!-- Index page having list of all articles -->
+<h1>All Articles</h1>
+
+<ul id="articles">
+	<% @articles.each do |article| %>
+		<li>
+			<%= link_to article.title, article_path(article), class: 'article_title' %> <!--This line creates a link to the article-->
+		</li>
+	<% end %>
+</ul>			
+<% if logged_in? %>
+<%= link_to "Create a New Article", new_article_path, class: "new_article" %> <!-- This line provides a link for creating a new article-->
+<% end %>
